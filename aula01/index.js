@@ -56,15 +56,15 @@ console.log(Array);
 // }
 // setInterval(executando, 1000)
 
-// var frase = "Vinícius";
-// var contador = 0;
+var frase = "Vinícius";
+var contador = 0;
 
-// while(contador < 30){
-//     console.log(frase)
-//     contador++
-// }
+while(contador < 30){
+    console.log(frase)
+    contador++
+}
 
-// if(contador < 30){
-//     console.log(frase)
-//     contador++
-// }
+if(contador < 30){
+    console.log(frase)
+    contador++
+}
