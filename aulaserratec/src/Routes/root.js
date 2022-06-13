@@ -7,6 +7,11 @@ import { ListaDeCompras } from "../Pages/ListaDeCompras";
 import { Home } from "../Pages/Home";
 import { QuemSomos } from "../Pages/QuemSomos";
 
+const usuario = {
+    nome: "Vinícius",
+    idade: 18
+}
+
 export const Root = () => {
     return (
         <>
@@ -19,7 +24,7 @@ export const Root = () => {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/quemsomos/:none" element={<QuemSomos />} />
+                    <Route path="/quemsomos/" element={<QuemSomos obj={usuario} />} />
                 </Routes>
             </BrowserRouter>
         </>
