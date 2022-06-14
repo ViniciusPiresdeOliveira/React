@@ -6,12 +6,7 @@ import { AdicionarLista } from "../Pages/AdicionarLista";
 import { ListaDeCompras } from "../Pages/ListaDeCompras";
 import { Home } from "../Pages/Home";
 import { QuemSomos } from "../Pages/QuemSomos";
-
-const usuario = {
-    nome: "Vinícius",
-    idade: 18
-}
-
+import { NotFound } from "../Pages/NotFound";
 export const Root = () => {
     return (
         <>
@@ -24,7 +19,8 @@ export const Root = () => {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/quemsomos/" element={<QuemSomos obj={usuario} />} />
+                    <Route path={`/quemsomos/:nome/:idade`} element={<QuemSomos/>} />
+                    <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </BrowserRouter>
         </>

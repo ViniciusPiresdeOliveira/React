@@ -1,8 +1,12 @@
 import React from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { FirstText, SecondText, Container, AulaButton } from "./style";
+import {Input} from "./Input"
 
-export const QuemSomos = (props) => {
-    
+export const QuemSomos = () => {
+
+    let { nome } = useParams();
+    let { idade } = useParams();
     let navigate = useNavigate();
 
     function handleClick() {
@@ -11,10 +15,12 @@ export const QuemSomos = (props) => {
 
     return (
         <>
-            <h3>Usuário logado: {props.obj.nome}</h3>
-            <h1>Quem Somos</h1>
-            <h2>Aqui você irá descobrir quem somos e o que fazemos</h2>
-            <button onClick={handleClick}>Voltar para Home</button>
+            <Container>
+                <FirstText>QuemSomos</FirstText>
+                <SecondText>QuemSomos</SecondText>
+                <Input/>
+            </Container>
+            <AulaButton onClick={handleClick}>Voltar para Home</AulaButton>
         </>
     )
 }
