@@ -11,14 +11,9 @@ import { NotFound } from "../Pages/NotFound";
 export const Root = () => {
     return (
         <>
-            {/* <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<RenderizacaoCondicional />} />
-                    <Route path="/addlista" element={<AdicionarLista />} />
-                </Routes>
-            </BrowserRouter> */}
             <BrowserRouter>
                 <Routes>
+                    <Route path="/addlista" element={<AdicionarLista />} />
                     <Route path="/" element={<Home />} />
                     <Route path={`/quemsomos/:nome/:idade`} element={<QuemSomos/>} />
                     <Route path="*" element={<NotFound/>}/>

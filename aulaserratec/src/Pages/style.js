@@ -33,3 +33,17 @@ export const AulaButton = styled.button`
         color: #fff;
     }
 `
+export const Inicio = styled.a`
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 15px;
+    display: block;
+`
+
+export const Imagem = styled.img`
+    margin: 0 auto;
+    height: 350px;
+    width: 350px;
+    display: flex;
+`
