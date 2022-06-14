@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { FirstText, SecondText, Container, AulaButton } from "./style";
-import {Input} from "./Input"
+import {Input} from "../Components/Input"
 
 export const QuemSomos = () => {
 
@@ -16,8 +16,8 @@ export const QuemSomos = () => {
     return (
         <>
             <Container>
-                <FirstText>QuemSomos</FirstText>
-                <SecondText>QuemSomos</SecondText>
+                <FirstText>Residência em TIC/Software</FirstText>
+                <SecondText>QuemSomos: Grupo7</SecondText>
                 <Input/>
             </Container>
             <AulaButton onClick={handleClick}>Voltar para Home</AulaButton>

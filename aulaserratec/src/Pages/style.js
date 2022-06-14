@@ -8,15 +8,15 @@ export const Container = styled.div`
 `
 
 export const FirstText = styled.div`
-    background: #333;
-    font-size: 1rem;
-    color: #000;
+    background: green;
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    color: black;
 `
 
 export const SecondText = styled.div`
-    background: #444;
-    font-size: 50px;
-    color: white;
+    font-size: 20px;
+    color: black;
     border: 1px;
 `
 

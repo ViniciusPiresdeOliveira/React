@@ -1,12 +1,13 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { RenderizacaoCondicional } from "../Pages/RenderizacaoCondicional";
-import { AdicionarLista } from "../Pages/AdicionarLista";
-import { ListaDeCompras } from "../Pages/ListaDeCompras";
+import { RenderizacaoCondicional } from "../Components/RenderizacaoCondicional";
+import { AdicionarLista } from "../Components/AdicionarLista";
+import { ListaDeCompras } from "../Components/ListaDeCompras";
 import { Home } from "../Pages/Home";
 import { QuemSomos } from "../Pages/QuemSomos";
 import { NotFound } from "../Pages/NotFound";
+
 export const Root = () => {
     return (
         <>
