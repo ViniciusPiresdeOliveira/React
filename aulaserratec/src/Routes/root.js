@@ -15,7 +15,7 @@ export const Root = () => {
                 <Routes>
                     <Route path="/addlista" element={<AdicionarLista />} />
                     <Route path="/" element={<Home />} />
-                    <Route path={`/quemsomos/:nome/:idade`} element={<QuemSomos/>} />
+                    <Route path={`/quemsomos/:nome`} element={<QuemSomos/>} />
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </BrowserRouter>

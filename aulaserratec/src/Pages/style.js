@@ -24,17 +24,19 @@ export const AulaButton = styled.button`
     cursor: pointer;
     background: transparent;
     font-size: 1rem;
-    color: #678;
-    border: 2px solid #c79;
-    border-radius: 0.4rem;
-    margin-top: 1rem;
+    color: white;
+    padding: 10px;
+    border: 2px solid green;
+    border-radius: 0.8rem;
+    margin-top: 3rem;
     &:hover{
-        background-color: #678;
-        color: #fff;
+        background-color: #333;
+        color: white;
     }
 `
 export const Inicio = styled.a`
     cursor: pointer;
+    font-size: 22px;
     text-decoration: none;
     color: white;
     margin-bottom: 15px;

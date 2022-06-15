@@ -1,10 +1,13 @@
 import React from "react";
-import {Root} from "./Routes/root"
+import { Root } from "./Routes/root"
+import { Contexto } from "./Context/data"
 
-function App() {
+export const App = () => {
   return (
     <>
-      <Root/>
+      <Contexto>
+        <Root />
+      </Contexto>
     </>
   );
 }
